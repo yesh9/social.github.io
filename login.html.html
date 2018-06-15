@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login page</title>
+</head>
+<body background="log.jpg" style="background-size: cover;">
+	<style>
+	.button{
+ background-color:transparent;
+    color: black;
+    padding: 14px 20px;
+    border: solid none;
+    cursor: pointer;
+    width: 50%;
+    transition: ease-in 1s;
+}
+
+.button:hover{
+  background-color:tomato;
+  color:#fff;
+  border:none;
+  width:102%;
+  transition: ease-in 1s;
+}
+h1{
+
+  display : block;
+  position : absolute;
+  top : 10%;
+  left : 250px;
+  width : 400px;
+  height : 150px;
+  color : white;
+  font-size : 60px;
+  font-weight : lighter;
+
+}
+}
+</style>
+<h1 id="head">Hi, there!</h1>
+<div style="background-color:rgba(252,252,252,0.49);margin-right:100px;margin-left: 900px;margin-top: 150px;margin-bottom:70px ;padding-top: 30px;padding-bottom: 20px;padding-right:60px; ">
+  <form action="landing.html">
+  <center>
+	<table>
+		<thead>
+
+		</thead>
+	</head>
+		<tr>
+	<td> <label for="email"><b>Email</b></label><input type="email" placeholder="here...!" name="email" style=" 
+	width: 100%;
+    padding: 12px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;" />
+</td>
+</tr>
+<tr>
+<td> <label for="psw"><b>Password</b></label><input type="Password" placeholder="it's a secret...!" name="Password" style=" 
+	width: 100%;
+    padding: 12px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;" /></td>
+    <tr>
+    	<td> <label>
+      <input type="checkbox" checked="checked" name="rememberPass" style="margin-bottom:15px font-size:30px"><b style="color:black"> Remember me</b>
+    </label>
+</tr>
+<tr>
+
+	<td><input type="submit" class="button" value="Log In"></td>
+</tr>
+<tr>
+	<td><p style="font-size: 12px;margin-left:50px;margin-top:50PX;  "><b>this site was created in 2018.</b></p>
+</table>
+</center>
+</form>
+<script type="text/javascript">
+  var x = prompt("Tell your name !");
+  document.getElementById("head").innerHTML = "Hi, "+ x + " !";
+
+</script>
+
+
+</body>
+</html>

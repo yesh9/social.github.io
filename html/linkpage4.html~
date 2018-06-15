@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Book Reader</title>
+	<link rel="stylesheet" href="linkpage.css">
+</head>
+<body>
+
+	<iframe src="b7.pdf" name="frame"></iframe>
+	<div id="two">
+	<p>Comedy</p>
+			
+	</div>
+	<div id="one">
+		<a href="b7.pdf" target="frame"><img src="images/r7.jpeg" alt="An image was here"></a>
+		<a href="b8.pdf" target="frame"><img src="images/r8.jpeg" alt="an image was here"></a>	
+	</div>
+	
+</body>
+</html>

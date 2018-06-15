@@ -1,0 +1,94 @@
+body{
+	margin : 0px;
+	padding : 0px;
+	overflow-x : hidden;
+}
+#one{
+	position : absolute;
+	top: 0px;
+	left : 0px;
+	right : 0px;
+	display : block;
+	height : 70%;
+	background-color : skyblue; 
+	z-index : 1;	
+	
+}
+#two{
+	position : absolute;
+	top : 70%;
+	left: 0px;
+	right : 0px;
+	background-color : gray;
+}
+#logo{
+	position : absolute;
+	display : block;
+	width : 400px;
+	height : 200px;
+	top : 100px;
+	left : 550px;
+
+}
+img{
+	width : 200px;
+	height : 250px;	
+}
+p{
+	text-align : center;
+	font-size : 25px;
+	border : 1px solid black;
+	padding : 20px;
+}
+#genre, #name{
+	margin : auto;
+	padding : 0px;	
+	padding-top : 40px;
+	padding-bottom : 10px;
+	display : block;
+	height : 120px;
+	position : static;
+	text-align : center;
+	background-color : white;
+	font-size : 30px;
+	font-weight : lighter;
+	border : none;
+}
+#name{
+	font-size : 100px;
+}
+
+#head, #tail{
+	text-align : center;
+	border : none;
+	padding : 20px;
+	margin : auto;
+	display : block;
+	color : white;
+	font-weight : lighter;
+	font-size : 100px;
+	margin-top : 100px;
+}
+#tail{
+	font-size : 30px;
+	margin-top : 60px;
+}
+
+td{
+	background-color : gainsboro;
+	padding : 50px;
+}
+td:hover{
+	background-color: white;
+
+}
+table{
+		border-spacing : 120px;
+		margin : auto;
+		margin-top : 10px;
+		margin-bottom : 10px;
+}
+b1{
+	display: block;
+	background-color : lightblue;	
+}

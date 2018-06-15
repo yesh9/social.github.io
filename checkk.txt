@@ -1,0 +1,23 @@
+hover
+pseodoselector
+     |
+     |
+  ___|___
+ |       |
+psedo.    selector.
+
+
+ease-in
+ease-out
+ease-in-out
+cubic-brezer
+...//////////
+animation:
+
+
+costum animations.
+animation:animation ,duration ,easing-fun"delat-fun",iteration-count direction;
+
+keyframes my anima{
+form{....}
+to{....}

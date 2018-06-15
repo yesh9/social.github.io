@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width initial-scale=1" charset="utf-8">
+	
+	<style type="text/css">
+	body{
+	 font-family: Verdana, sans-serif;
+	 margin: 0;
+	}
+	* {
+  box-sizing: border-box;
+}
+	img 
+	{
+		width: 450px;
+		height:258px;
+	}
+	img:hover{
+		opacity: 0.5;
+
+	}
+
+h1{
+font-family:calibri,sans-serif;
+ font-size: 40px;
+ border:none;
+ margin-top: 40px;
+ width:30%;
+ color: grey;
+
+}
+	h1:{
+
+ font-size: 50px;
+ position: center;
+	color:	black;
+	transition: ease-in 0.5s;
+	}
+
+	table{
+		width: 90%;
+		border-spacing:10px;
+		background-color:rgba(248,243,243,0.24);
+		table-layout: fixed;
+		margin:auto;
+	}
+	.column {
+  float: left;
+  width: 25%;
+  padding: 8px 8px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+ /*Modal Content*/ 
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0%;
+  width: 90%;
+  height: ;
+  max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover{
+	color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+
+}
+
+.cursor {
+  cursor: pointer;
+	}
+.prev{
+	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -30px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -30px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+	  }
+	  .next {
+  right: 0;
+  border-radius: 3px 0px 0px 3px;
+}
+.prev{
+	left: 0;
+	border-radius:3px 0px 0px 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover{
+background-color: rgba(0, 0, 0, 0.8);	
+}
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+	.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+#header{
+	width: 100%;height: 80px; background: #333;box-shadow: 0px 2px 4px grey;
+}
+#navbar{
+	width: 100%; height: 80px;
+}
+#navbar>li{
+	width:200px;list-style: none;float: left;border-right: 1px solid grey;
+}
+li>a{display: block;color: white;line-height: 80px;text-align: center;font-size: 20px;text-decoration: none;}
+li>a:hover{
+opacity: 0.7;
+
+}
+@media screen and (max-width: 1060px){
+	#header{width: 100%;height: 60px;}
+	#navbar{width: 100%height: 60px;float: right;position: relative;top:-; }
+	#navbar{}
+
+}
+</style>
+	<title></title>
+</head>
+<body background="bulb.jpg" style=" background-color: white; background-size:cover;">
+	<div id="header">
+		<ul id="navbar">
+			<li><a href="landing.html"><abbr title="PhotoGallery" style="text-decoration: none">CHERRISH</abbr></a></li>
+			<li><a href="sid/mypage.html"><abbr title="TO know the famouse personality" style="text-decoration: none">FAMOUS</abbr></a></li>
+			<li><a href="videoGallery/video.html"><abbr title="intresting videos" style="text-decoration: none">VIDEOS</abbr></a></li>
+      <li><a href="audiolist.html"><abbr title="intresting music" style="text-decoration: none">AUDIO</abbr></a></li>
+			<li><a href="html/book.html"><abbr title="read your favourite books heres" style="text-decoration: none">BOOKS</abbr></a></li>
+			<li><a href="about.html"><abbr title="To know more about us" style="text-decoration: none">ABOUT US</abbr></a></li>
+			<li><a href="chatbox.html"><abbr title="talk to us" style="text-decoration: none">CONTACT US</abbr></a></li>
+		</ul>
+	</div>
+<table align="center" >
+	<tr>
+		<td class="column"><img src="confetti.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></td>
+		<td class="column"><img src="girl.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></td>
+		<td class="column"><img src="heart.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></td>
+
+	   </tr>
+	   
+	   <tr>
+		<td class="column"><img src="ticket.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></td>
+		<td class="column"><img src="balloon.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></td>
+		<td class="column"><img src="fun.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></td>
+	</tr>
+</table>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+ <a href="file:///C:second.html"> <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="confetti.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="girl.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="heart.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="ticket.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="balloon.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="fun.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+     <img class="demo cursor" src="confetti.jpg" style="width:100%" onclick="currentSlide(1)" alt="Stay confident">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="girl.jpg" style="width:100%" onclick="currentSlide(2)" alt="Celebrate every movement">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="heart.jpg" style="width:100%" onclick="currentSlide(3)" alt="Spread Love">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="ticket.jpg" style="width:100%" onclick="currentSlide(4)" alt="Buzz for new movie">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="balloon.jpg" style="width:100%" onclick="currentSlide(5)" alt="Lighten Brighten">
+    </div>
+    <div class="column" >
+      <img class="demo cursor" src="fun.jpg" style="width:100%" onclick="currentSlide(6)" alt="Carnival ">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += "active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

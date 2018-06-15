@@ -1,0 +1,4 @@
+*check sing in make it perfect
+*in main login page you have to add log in buttens with attributs of link<a>
+*add mouse over and mouse out on this 
+*make the text field with some value preentered and make it invisiable when started typing
